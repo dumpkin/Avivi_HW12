@@ -1,9 +1,8 @@
+//вся логыка тут
+
 package com.dumpkin.avivi.work;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class MyArray implements Let {
 
@@ -34,6 +33,17 @@ public class MyArray implements Let {
         show(getInts());
         System.out.println("second List has:\n");
         show(getDoubleints());
+
+        System.out.println("________________________________________\n" +
+                "send 2x multiple values to second list\n" +
+                "________________________________________");
+        sendToAnother();
+        System.out.println("doubled list is: \n");
+        show(doubleints);
+        System.out.println("==========================================\n\n");
+
+        System.out.println("reversed doubled list is: \n");
+        showreversed(doubleints);
     }
 
 
@@ -43,6 +53,20 @@ public class MyArray implements Let {
 
     public List<Integer> getDoubleints() {
         return doubleints;
+    }
+
+    //send double values from one List to another
+    void sendToAnother() {
+
+        for (Integer item : ints) {
+            doubleints.add(item * 2);
+        }
+    }
+
+    void showreversed(List<Integer> list) {
+        Collections.reverse(list);
+        System.out.println("_____________________________\n        Reversed\n");
+        show(list);
     }
 }
 

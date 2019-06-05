@@ -9,9 +9,6 @@ package com.dumpkin.avivi;
 
 import com.dumpkin.avivi.work.MyArray;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Homework_12 {
 
@@ -19,12 +16,11 @@ public class Homework_12 {
         System.out.println("Homework #12 colections");
 
 
-
-        MyArray array=new MyArray();
-       System.out.println(" generate new list ");
+        MyArray array = new MyArray();
+        System.out.println(" generate new list ");
 
         array.generate();
         System.out.println(" view list ");
-array.view();
+        array.view();
     }
 }
