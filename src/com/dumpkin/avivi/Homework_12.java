@@ -18,16 +18,13 @@ public class Homework_12 {
     public static void main(String[] args) {
         System.out.println("Homework #12 colections");
 
-      //  List<Integer> doubleints=new LinkedList<>();
+
 
         MyArray array=new MyArray();
        System.out.println(" generate new list ");
 
         array.generate();
         System.out.println(" view list ");
-        array.view();
-        array.generate();
-        System.out.println(" view list ");
-        array.view();
+array.view();
     }
 }
